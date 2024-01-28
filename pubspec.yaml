@@ -1,5 +1,5 @@
-name: edubuntu_desktop_installer
-description: Edubuntu Desktop Installer
+name: xubuntu_desktop_installer
+description: Xubuntu Desktop Installer
 publish_to: 'none'
 
 environment:

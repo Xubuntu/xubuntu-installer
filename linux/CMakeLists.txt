@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "edubuntu-desktop-installer")
+set(BINARY_NAME "xubuntu-desktop-installer")
 set(APPLICATION_ID "com.example.ubuntu_flavor_installer")
 
 cmake_policy(SET CMP0063 NEW)

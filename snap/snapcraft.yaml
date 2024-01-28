@@ -1,14 +1,14 @@
-name: edubuntu-desktop-installer
+name: xubuntu-desktop-installer
 version: git
 summary: Ubuntu Studio System Installer
 description: |
-  This project is a modern implementation of the Edubuntu desktop
+  This project is a modern implementation of the Xuntu desktop
   installer, using subiquity as a backend and Flutter for the UI.
 grade: stable
 confinement: classic
 base: core22
-issues: https://bugs.launchpad.net/edubuntu-desktop-installer/+filebug
-contact: https://bugs.launchpad.net/edubuntu-desktop-installer/+filebug
+issues: https://bugs.launchpad.net/xubuntu-desktop-installer/+filebug
+contact: https://bugs.launchpad.net/xubuntu-desktop-installer/+filebug
 
 apps:
   subiquity-server:
@@ -23,10 +23,10 @@ apps:
   subiquity-loadkeys:
     command: bin/subiquity/bin/subiquity-loadkeys
 
-  edubuntu-desktop-installer:
-    command: bin/edubuntu-desktop-installer
+  xubuntu-desktop-installer:
+    command: bin/xubuntu-desktop-installer
     command-chain: [bin/launcher]
-    desktop: bin/data/flutter_assets/assets/edubuntu-desktop-installer.desktop
+    desktop: bin/data/flutter_assets/assets/xubuntu-desktop-installer.desktop
     environment:
       PATH: $SNAP/usr/bin:$SNAP/bin:$PATH
       LIBGL_DRIVERS_PATH: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/dri
@@ -152,7 +152,7 @@ parts:
       - zip
     override-prime: ""
 
-  edubuntu-desktop-installer:
+  xubuntu-desktop-installer:
     after: [flutter-git]
     source: .
     source-type: git
