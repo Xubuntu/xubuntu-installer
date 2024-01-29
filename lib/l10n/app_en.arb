@@ -3,6 +3,8 @@
   "welcomeSlideBody": "Start exploring your new desktop by making yourself familiar with the applications menu.\n\nUse the Software application to install more applications and the Settings Manager to customize the look and feel of your desktop.",
   "helpSlideHeader": "Help & Support",
   "helpSlideBody": "The official documentation will help you getting started with Xubuntu. You can find the documentation under Help on the applications menu.\n\nIf the documentation doesn't answer your questions, check the full list of support methods from the Xubuntu website.",
+  "supportSlideHeader": "Real-time support",
+  "supportSlideBody": "For live, online support in English, join our IRC channel, #xubuntu.\n\nFor support in other languages, view the full list of local support channels.",
   "customizeSlideTitle": "Make it Age-Appropriate",
   "customizeSlideBody": "* Edubuntu ships with Edubuntu Installer, an easy way to customize the Edubuntu installation and make it appropriate for any age group.\n\n* By default, Edubuntu comes with software for all age groups and is configured for  tertiary/collegiate use in mind.\n\n*To configure it for the target user base, simply run Edubuntu Installer and check or uncheck which software groups you wish to install or uninstall.\n\n* Similarily, checking the box to configure the desktop will reconfigure the defaults to match the target user age group.",
   "gbrainySlideTitle": "Exercise Your Mind",
