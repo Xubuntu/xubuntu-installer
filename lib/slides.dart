@@ -28,36 +28,39 @@ final installationSlides = [
 Widget _buildWelcomeSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
-        child: Column(
+        child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              alignment: Alignment.topCenter,
-              child: SizedBox(
-                width: 640,
-                height: 175,
-                child: Image.asset('assets/slides/edubuntu-new-logo.png'),
-              ),
-            ),
-            Center(
-              child: Html(
-                shrinkWrap: true,
-                data: context.l10n.welcomeSlideHeader,
-                style: {
-                  'body': Style(
-                     color: Colors.white,
-                     fontSize: FontSize(24),
-                  ),
-                },
-              ),
-            ),
             Expanded(
-              child: Text(
-                context.l10n.welcomeSlideBody,
-                style: bodyStyle,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(10),
+                    child: Text(
+                      context.l10n.welcomeSlideHeader,
+                      style: headerStyle
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(10),
+                    child: Text(
+                      context.l10n.welcomeSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 60.0),
+              child: SizedBox(
+                width: 130,
+                height: 130,
+                child: Image.asset('assets/slides/xubuntu-icon.png'),
               ),
             ),
           ],
@@ -70,7 +73,7 @@ Widget _buildWelcomeSlide(BuildContext context) {
 Widget _buildCustomizeSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -120,7 +123,7 @@ Widget _buildCustomizeSlide(BuildContext context) {
 Widget _buildGbrainySlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -169,7 +172,7 @@ Widget _buildGbrainySlide(BuildContext context) {
 Widget _buildKdeeduSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -218,7 +221,7 @@ Widget _buildKdeeduSlide(BuildContext context) {
 Widget _buildTux4kidsSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -267,7 +270,7 @@ Widget _buildTux4kidsSlide(BuildContext context) {
 Widget _buildBijibenSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -316,7 +319,7 @@ Widget _buildBijibenSlide(BuildContext context) {
 Widget _buildFontsSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -365,7 +368,7 @@ Widget _buildFontsSlide(BuildContext context) {
 Widget _buildAdminSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -414,7 +417,7 @@ Widget _buildAdminSlide(BuildContext context) {
 Widget _buildLibrecadSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -463,7 +466,7 @@ Widget _buildLibrecadSlide(BuildContext context) {
 Widget _buildCalibreSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -512,7 +515,7 @@ Widget _buildCalibreSlide(BuildContext context) {
 Widget _buildCalcSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -560,7 +563,7 @@ Widget _buildCalcSlide(BuildContext context) {
 Widget _buildDesksoftSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -608,7 +611,7 @@ Widget _buildDesksoftSlide(BuildContext context) {
 Widget _buildAccessSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -657,7 +660,7 @@ Widget _buildAccessSlide(BuildContext context) {
 Widget _buildSoftwareSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -706,7 +709,7 @@ Widget _buildSoftwareSlide(BuildContext context) {
 Widget _buildGetHelpSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/ed_background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(

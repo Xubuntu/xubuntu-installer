@@ -1,6 +1,6 @@
 {
-  "welcomeSlideHeader": "Welcome to a New Era of Edubuntu!",
-  "welcomeSlideBody": "\nThank you for installing Edubuntu! The Edubuntu project aims to provide a whole-school technological platform suitable for delivering education. We are coders, educators, parents and technologists who aim to make technology easier for all.\n\nWhile the installer is copying some files to disk, we'll introduce you to the Edubuntu Desktop system.\n\nEnjoy Edubuntu and welcome to the Edubuntu family!",
+  "welcomeSlideHeader": "Welcome to Xubuntu",
+  "welcomeSlideBody": "Start exploring your new desktop by making yourself familiar with the applications menu.\n\nUse the Software application to install more applications and the Settings Manager to customize the look and feel of your desktop.",
   "customizeSlideTitle": "Make it Age-Appropriate",
   "customizeSlideBody": "* Edubuntu ships with Edubuntu Installer, an easy way to customize the Edubuntu installation and make it appropriate for any age group.\n\n* By default, Edubuntu comes with software for all age groups and is configured for  tertiary/collegiate use in mind.\n\n*To configure it for the target user base, simply run Edubuntu Installer and check or uncheck which software groups you wish to install or uninstall.\n\n* Similarily, checking the box to configure the desktop will reconfigure the defaults to match the target user age group.",
   "gbrainySlideTitle": "Exercise Your Mind",
