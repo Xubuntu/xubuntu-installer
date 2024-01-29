@@ -9,6 +9,7 @@ const bodyStyle = TextStyle(color: Colors.white, fontSize: 18);
 
 final installationSlides = [
   _buildWelcomeSlide,
+  _buildHelpSlide,
   _buildCustomizeSlide,
   _buildGbrainySlide,
   _buildKdeeduSlide,
@@ -61,6 +62,40 @@ Widget _buildWelcomeSlide(BuildContext context) {
                 width: 130,
                 height: 130,
                 child: Image.asset('assets/slides/xubuntu-icon.png'),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ],
+  );
+}
+
+Widget _buildHelpSlide(BuildContext context) {
+  return Stack(
+    children: [
+      Image.asset('assets/slides/xubuntu-background.png'),
+      Container(
+        alignment: Alignment.bottomRight,
+        child: Image.asset('assets/slides/xubuntu-bg-mouse-left.png')
+      ),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.helpSlideHeader,
+                style: headerStyle
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.helpSlideBody,
+                style: bodyStyle,
               ),
             ),
           ],
