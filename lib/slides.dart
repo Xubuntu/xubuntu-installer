@@ -18,7 +18,7 @@ final installationSlides = [
 Widget _buildWelcomeSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/xubuntu/background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Row(
@@ -50,7 +50,7 @@ Widget _buildWelcomeSlide(BuildContext context) {
               child: SizedBox(
                 width: 130,
                 height: 130,
-                child: Image.asset('assets/slides/xubuntu/icon.png'),
+                child: Image.asset('assets/slides/xubuntu-icon.png'),
               ),
             ),
           ],
@@ -63,10 +63,10 @@ Widget _buildWelcomeSlide(BuildContext context) {
 Widget _buildHelpSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/xubuntu/background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Container(
         alignment: Alignment.bottomRight,
-        child: Image.asset('assets/slides/xubuntu/bg-mouse-left.png')
+        child: Image.asset('assets/slides/xubuntu-bg-mouse-left.png')
       ),
       Padding(
         padding: const EdgeInsets.all(60),
@@ -107,10 +107,10 @@ Widget _buildHelpSlide(BuildContext context) {
 Widget _buildSupportSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/xubuntu/background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Container(
         alignment: Alignment.bottomLeft,
-        child: Image.asset('assets/slides/xubuntu/bg-mouse-right.png')
+        child: Image.asset('assets/slides/xubuntu-bg-mouse-right.png')
       ),
       Padding(
         padding: const EdgeInsets.all(60),
@@ -151,7 +151,7 @@ Widget _buildSupportSlide(BuildContext context) {
 Widget _buildCommunitySlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/xubuntu/background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Column(
@@ -189,7 +189,7 @@ Widget _buildCommunitySlide(BuildContext context) {
         padding: const EdgeInsets.all(70),
         child: Stack(
           children: [
-            Image.asset('assets/slides/xubuntu/community.png'),
+            Image.asset('assets/slides/xubuntu-community.png'),
             Container(
               padding: const EdgeInsets.only(left: 90.0, top: 10.0),
               child: SizedBox(
