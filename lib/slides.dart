@@ -6,6 +6,7 @@ import 'l10n.dart';
 
 const headerStyle = TextStyle(color: Colors.white, fontSize: 32);
 const bodyStyle = TextStyle(color: Colors.white, fontSize: 18);
+const speechStyle = TextStyle(color: Colors.white, fontSize: 14);
 
 final installationSlides = [
   _buildWelcomeSlide,
@@ -81,10 +82,20 @@ Widget _buildHelpSlide(BuildContext context) {
             ),
             Container(
               padding: const EdgeInsets.all(10),
-              child: Text(
-                context.l10n.helpSlideBody,
-                style: bodyStyle,
-              ),
+              child: Html(
+                shrinkWrap: true,
+                data: context.l10n.helpSlideBody,
+                style: {
+                  'body': Style(
+                    color: Colors.white,
+                    fontSize: FontSize(18),
+                  ),
+                  'a': Style(
+                    color: Colors.white
+                  )
+                },
+                onAnchorTap: (url, _, __) => launchUrlString(url!),
+              )
             ),
           ],
         ),
@@ -115,10 +126,20 @@ Widget _buildSupportSlide(BuildContext context) {
             ),
             Container(
               padding: const EdgeInsets.all(10),
-              child: Text(
-                context.l10n.supportSlideBody,
-                style: bodyStyle,
-              ),
+              child: Html(
+                shrinkWrap: true,
+                data: context.l10n.supportSlideBody,
+                style: {
+                  'body': Style(
+                    color: Colors.white,
+                    fontSize: FontSize(18),
+                  ),
+                  'a': Style(
+                    color: Colors.white
+                  )
+                },
+                onAnchorTap: (url, _, __) => launchUrlString(url!),
+              )
             ),
           ],
         ),
@@ -137,18 +158,28 @@ Widget _buildCommunitySlide(BuildContext context) {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: Text(
                 context.l10n.communitySlideHeader,
                 style: headerStyle
               ),
             ),
             Container(
-              padding: const EdgeInsets.all(10),
-              child: Text(
-                context.l10n.communitySlideBody,
-                style: bodyStyle,
-              ),
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              child: Html(
+                shrinkWrap: true,
+                data: context.l10n.communitySlideBody,
+                style: {
+                  'body': Style(
+                    color: Colors.white,
+                    fontSize: FontSize(18),
+                  ),
+                  'a': Style(
+                    color: Colors.white
+                  )
+                },
+                onAnchorTap: (url, _, __) => launchUrlString(url!),
+              )
             ),
           ],
         ),
@@ -160,13 +191,13 @@ Widget _buildCommunitySlide(BuildContext context) {
           children: [
             Image.asset('assets/slides/xubuntu-community.png'),
             Container(
-              padding: const EdgeInsets.only(left: 90.0),
+              padding: const EdgeInsets.only(left: 90.0, top: 10.0),
               child: SizedBox(
-                width: 300,
+                width: 280,
                 height: 95,
                 child: Text(
                   context.l10n.communitySpeechBubble,
-                  style: bodyStyle
+                  style: speechStyle
                 ),
               ),
             ),
