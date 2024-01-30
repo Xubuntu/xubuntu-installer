@@ -6,67 +6,51 @@ import 'l10n.dart';
 
 const headerStyle = TextStyle(color: Colors.white, fontSize: 32);
 const bodyStyle = TextStyle(color: Colors.white, fontSize: 18);
+const speechStyle = TextStyle(color: Colors.white, fontSize: 14);
 
 final installationSlides = [
-  _buildFirstSlide,
-  _buildSecondSlide,
-  _buildThirdSlide,
+  _buildWelcomeSlide,
+  _buildHelpSlide,
+  _buildSupportSlide,
+  _buildCommunitySlide,
 ];
 
-Widget _buildFirstSlide(BuildContext context) {
+Widget _buildWelcomeSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/welcome.png'),
-      Padding(
-        padding: const EdgeInsets.all(40),
-        child: FractionallySizedBox(
-          widthFactor: 0.5,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(context.l10n.firstSlideHeader, style: headerStyle),
-              const SizedBox(height: 20),
-              Expanded(
-                child: Text(context.l10n.firstSlideBody, style: bodyStyle),
-              ),
-            ],
-          ),
-        ),
-      ),
-    ],
-  );
-}
-
-Widget _buildSecondSlide(BuildContext context) {
-  return Stack(
-    children: [
-      Image.asset('assets/slides/background.png'),
+      Image.asset('assets/slides/xubuntu-background.png'),
       Padding(
         padding: const EdgeInsets.all(60),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  context.l10n.secondSlideBody,
-                  style: bodyStyle,
-                ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(10),
+                    child: Text(
+                      context.l10n.welcomeSlideHeader,
+                      style: headerStyle
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(10),
+                    child: Text(
+                      context.l10n.welcomeSlideBody,
+                      style: bodyStyle,
+                    ),
+                  ),
+                ],
               ),
             ),
-            const Expanded(
-              child: Align(
-                alignment: FractionalOffset(1, 0.75),
-                child: SizedBox(
-                  width: 320,
-                  height: 240,
-                  child: Placeholder(),
-                ),
+            Padding(
+              padding: const EdgeInsets.only(left: 60.0),
+              child: SizedBox(
+                width: 130,
+                height: 130,
+                child: Image.asset('assets/slides/xubuntu-icon.png'),
               ),
             ),
           ],
@@ -76,22 +60,149 @@ Widget _buildSecondSlide(BuildContext context) {
   );
 }
 
-Widget _buildThirdSlide(BuildContext context) {
+Widget _buildHelpSlide(BuildContext context) {
   return Stack(
     children: [
-      Image.asset('assets/slides/background.png'),
-      Center(
-        child: Html(
-          shrinkWrap: true,
-          data: context.l10n.thirdSlideBody,
-          style: {
-            'body': Style(
-              color: Colors.white,
-              fontSize: FontSize(24),
+      Image.asset('assets/slides/xubuntu-background.png'),
+      Container(
+        alignment: Alignment.bottomRight,
+        child: Image.asset('assets/slides/xubuntu-bg-mouse-left.png')
+      ),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.helpSlideHeader,
+                style: headerStyle
+              ),
             ),
-          },
-          onAnchorTap: (url, _, __) => launchUrlString(url!),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Html(
+                shrinkWrap: true,
+                data: context.l10n.helpSlideBody,
+                style: {
+                  'body': Style(
+                    color: Colors.white,
+                    fontSize: FontSize(18),
+                  ),
+                  'a': Style(
+                    color: Colors.white
+                  )
+                },
+                onAnchorTap: (url, _, __) => launchUrlString(url!),
+              )
+            ),
+          ],
         ),
+      ),
+    ],
+  );
+}
+
+Widget _buildSupportSlide(BuildContext context) {
+  return Stack(
+    children: [
+      Image.asset('assets/slides/xubuntu-background.png'),
+      Container(
+        alignment: Alignment.bottomLeft,
+        child: Image.asset('assets/slides/xubuntu-bg-mouse-right.png')
+      ),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                context.l10n.supportSlideHeader,
+                style: headerStyle
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Html(
+                shrinkWrap: true,
+                data: context.l10n.supportSlideBody,
+                style: {
+                  'body': Style(
+                    color: Colors.white,
+                    fontSize: FontSize(18),
+                  ),
+                  'a': Style(
+                    color: Colors.white
+                  )
+                },
+                onAnchorTap: (url, _, __) => launchUrlString(url!),
+              )
+            ),
+          ],
+        ),
+      ),
+    ],
+  );
+}
+
+Widget _buildCommunitySlide(BuildContext context) {
+  return Stack(
+    children: [
+      Image.asset('assets/slides/xubuntu-background.png'),
+      Padding(
+        padding: const EdgeInsets.all(60),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              child: Text(
+                context.l10n.communitySlideHeader,
+                style: headerStyle
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              child: Html(
+                shrinkWrap: true,
+                data: context.l10n.communitySlideBody,
+                style: {
+                  'body': Style(
+                    color: Colors.white,
+                    fontSize: FontSize(18),
+                  ),
+                  'a': Style(
+                    color: Colors.white
+                  )
+                },
+                onAnchorTap: (url, _, __) => launchUrlString(url!),
+              )
+            ),
+          ],
+        ),
+      ),
+      Container(
+        alignment: Alignment.bottomLeft,
+        padding: const EdgeInsets.all(70),
+        child: Stack(
+          children: [
+            Image.asset('assets/slides/xubuntu-community.png'),
+            Container(
+              padding: const EdgeInsets.only(left: 90.0, top: 10.0),
+              child: SizedBox(
+                width: 280,
+                height: 95,
+                child: Text(
+                  context.l10n.communitySpeechBubble,
+                  style: speechStyle
+                ),
+              ),
+            ),
+          ]
+        )
       ),
     ],
   );

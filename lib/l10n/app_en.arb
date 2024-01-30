@@ -1,9 +1,11 @@
 {
-  "firstSlideTitle": "First slide",
-  "firstSlideHeader": "Welcome to Ubuntu FLAVOR",
-  "firstSlideBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  "secondSlideTitle": "Second slide",
-  "secondSlideBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  "thirdSlideTitle": "Third slide",
-  "thirdSlideBody": "Learn more at <a href=\"https://ubuntu.com\">ubuntu.com</a>"
+  "welcomeSlideHeader": "Welcome to Xubuntu",
+  "welcomeSlideBody": "Start exploring your new desktop by making yourself familiar with the applications menu.\n\nUse the Software application to install more applications and the Settings Manager to customize the look and feel of your desktop.",
+  "helpSlideHeader": "Help & Support",
+  "helpSlideBody": "The <a href='https://docs.xubuntu.org/2004/'><em>Official Documentation</em></a> will help you getting started with Xubuntu. You can find the documentation under <em>Help</em> on the applications menu.<br><br>If the documentation doesn't answer your questions, check the <a href='https://xubuntu.org/help/'>full list of support methods</a> from the Xubuntu website.",
+  "supportSlideHeader": "Real-time support",
+  "supportSlideBody": "For live, online support <em>in English</em>, join our IRC channel, <em>#xubuntu</em>, by clicking <a href='https://kiwiirc.com/nextclient/irc.libera.chat?nick=xubuntu?i#xubuntu'>here</a>.<br><br>For support in <em>other languages</em>, view the full list of <a href='https://wiki.ubuntu.com/IRC/ChannelList/Local'>local support channels</a>.",
+  "communitySlideHeader": "Join the community",
+  "communitySlideBody": "We'd love to hear about your experiences with Xubuntu. Share them on the <a href='https://lists.ubuntu.com/mailman/listinfo/xubuntu-users'>Xubuntu users mailing list</a> or on the <a href='https://kiwiirc.com/nextclient/irc.libera.chat?nick=xubuntu?i#xubuntu-offtopic'>#xubuntu-offtopic IRC channel</a>.<br><br>We always need help in making Xubuntu even better. No specific skills are required to contribute. To read about all of the opportunities available, head to the <a href='https://xubuntu.org/contribute/'>Get Involved</a> section of our website.",
+  "communitySpeechBubble": "Hey, what about passing on your installation media to a friend!"
 }

@@ -9,11 +9,11 @@ Future<void> main(List<String> args) {
   return runInstallerApp(
     args,
     flavor: const UbuntuFlavor(
-      id: 'ubuntu-flavor',
-      name: 'Ubuntu FLAVOR',
+      id: 'xubuntu',
+      name: 'Xubuntu',
     ),
-    theme: yaruMagentaLight,
-    darkTheme: yaruMagentaDark,
+    theme: yaruBlueLight,
+    darkTheme: yaruBlueDark,
     localizationsDelegates: AppLocalizations.localizationsDelegates,
     slides: installationSlides,
   );

@@ -1,5 +1,5 @@
-name: ubuntu_flavor_installer
-description: Ubuntu Flavor Installer
+name: xubuntu_desktop_installer
+description: Xubuntu Desktop Installer
 publish_to: 'none'
 
 environment:
@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_html: 3.0.0-beta.1
+  flutter_html: ^3.0.0-beta.2
   flutter_localizations:
     sdk: flutter
   handy_window: ^0.3.0
@@ -22,7 +22,7 @@ dependencies:
   yaru: ^0.9.0
 
 dev_dependencies:
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
   flutter_test:
     sdk: flutter
   melos: ^3.0.0
