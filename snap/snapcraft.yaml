@@ -1,8 +1,8 @@
 name: xubuntu-desktop-installer
 version: git
-summary: Ubuntu Studio System Installer
+summary: Xubuntu System Installer
 description: |
-  This project is a modern implementation of the Xuntu desktop
+  This project is a modern implementation of the Xubuntu desktop
   installer, using subiquity as a backend and Flutter for the UI.
 grade: stable
 confinement: classic
