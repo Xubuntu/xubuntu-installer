@@ -1,4 +1,4 @@
-name: xubuntu-desktop-installer
+name: xubuntu-installer
 version: git
 summary: Xubuntu System Installer
 description: |
@@ -7,8 +7,8 @@ description: |
 grade: stable
 confinement: classic
 base: core22
-issues: https://bugs.launchpad.net/xubuntu-desktop-installer/+filebug
-contact: https://bugs.launchpad.net/xubuntu-desktop-installer/+filebug
+issues: https://bugs.launchpad.net/xubuntu-installer/+filebug
+contact: https://bugs.launchpad.net/xubuntu-installer/+filebug
 
 apps:
   subiquity-server:
@@ -23,10 +23,10 @@ apps:
   subiquity-loadkeys:
     command: bin/subiquity/bin/subiquity-loadkeys
 
-  xubuntu-desktop-installer:
-    command: bin/xubuntu-desktop-installer
+  xubuntu-installer:
+    command: bin/xubuntu-installer
     command-chain: [bin/launcher]
-    desktop: bin/data/flutter_assets/assets/xubuntu-desktop-installer.desktop
+    desktop: bin/data/flutter_assets/assets/xubuntu-installer.desktop
     environment:
       PATH: $SNAP/usr/bin:$SNAP/bin:$PATH
       LIBGL_DRIVERS_PATH: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/dri
@@ -152,7 +152,7 @@ parts:
       - zip
     override-prime: ""
 
-  xubuntu-desktop-installer:
+  xubuntu-installer:
     after: [flutter-git]
     source: .
     source-type: git

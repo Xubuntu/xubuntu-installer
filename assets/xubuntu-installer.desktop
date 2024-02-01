@@ -6,7 +6,7 @@ Name=Install RELEASE
 Comment=Install this system permanently to your hard disk
 Keywords=ubiquity;
 #use sh because pkexec is broken under xfce/lxce http://pad.lv/1193526
-Exec=xubuntu-desktop-installer
+Exec=xubuntu-installer
 Icon=ubiquity
 Terminal=false
 Categories=GTK;System;Settings;

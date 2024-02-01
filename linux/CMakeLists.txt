@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "xubuntu-desktop-installer")
-set(APPLICATION_ID "org.xubuntu.xubuntu_desktop_installer")
+set(BINARY_NAME "xubuntu-installer")
+set(APPLICATION_ID "org.xubuntu.xubuntu_installer")
 
 cmake_policy(SET CMP0063 NEW)
 
