@@ -1,3 +1,5 @@
+_This project is obsolete. It has been replaced by Xubuntu and other flavors implementing [ubuntu-desktop-bootstrap](https://github.com/canonical/ubuntu-desktop-provision)_
+
 # Xubuntu Desktop Installer
 
 Created from [Ubuntu Flavor Installer](https://github.com/canonical/ubuntu-flavor-installer)
